@@ -70,6 +70,11 @@ nav{
     grid-template-columns: 1.2fr .8fr;
     align-items: center;
 }
+
+.influencer-section:hover img#transform-img{
+    transform: translate(30px, -20px);
+    transition: 0.5s transform ease-in-out;
+}
 .heading-text{
     color: var(--text-color);
     font-size: 3em;
@@ -297,8 +302,17 @@ i.fab.fa-instagram {
 /* Small device start */
 @media only screen and (min-width:100px) and (max-width:688px) {
 
-    header{
+    .nav-items{
         display: none;
+    }
+
+    h2.nav-logo-text{
+        font-size: 1em;
+    }
+
+    h2.nav-logo-text a{
+        color: var(--btn-bg-color);
+
     }
     .influencer-section{
         grid-template-columns: repeat(1, 1fr);
