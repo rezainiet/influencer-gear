@@ -166,6 +166,9 @@ color: #787885;
     font-size: 14px;
 }
 
+.product-more-btn{
+    color: var(--btn-bg-color);
+}
 .see-more-btn{
     float: right;
     margin-top: 10%;
@@ -288,6 +291,10 @@ i.fab.fa-instagram {
 /* Footer section end */
 
 
+
+/* Meadia query for Responsive */
+
+/* Small device start */
 @media only screen and (min-width:100px) and (max-width:688px) {
 
     header{
@@ -347,16 +354,12 @@ i.fab.fa-instagram {
     }
 }
 
+/* Small device end */
+
+/* Medium device Start */
 
 @media only screen and (min-width:689px) and (max-width:992px) {
-    /* header{
-        display: none;
-    } */
-    /* .influencer-section{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 5%;
-    } */
-
+    
     .products{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -365,4 +368,13 @@ i.fab.fa-instagram {
     .see-more-btn{
         margin-top: 25%;
     }
+
+    .solutions{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
+/* Medium device end */
+
+/* Media query end */
