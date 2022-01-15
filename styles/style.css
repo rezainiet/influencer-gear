@@ -17,10 +17,6 @@ body{
     background-color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
 }
-
-section{
-    margin-bottom: 40px;
-}
 .container{
     display: grid;
     margin: 50px 75px;
@@ -163,8 +159,10 @@ color: #787885;
     font-size: 14px;
 }
 
-/* End */
+/* Popular Collection End */
 
+
+/* Footer section start */
 
 footer{
     margin: 10% 0 0 0;
@@ -226,3 +224,47 @@ i.fab.fa-instagram {
 .footer-social{
     margin-top: 10px;
 }
+
+/* Solution part start */
+
+
+h2.centered-text {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    margin: 85px 0 20px 0;
+}
+.solutions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+}
+.single-solution{
+    display: flex;
+    flex-direction: column;
+}
+
+.solution-image img{
+    width: 100%;
+}
+
+.single-solution a{
+    text-decoration: none;
+    color: var(--product-heading-color);
+}
+
+.solution-short-para{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.anchor-of-solution-short{
+    color: var(--btn-bg-color);
+}
+
+span.solution-span:hover {
+    text-decoration: underline;
+}
+/* Footer section end */
