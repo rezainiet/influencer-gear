@@ -84,6 +84,10 @@ button.primary-btn.influencer-btn{
     padding: 10px 20px;
     border-radius: 50px;
 }
+.influencer-right img{
+    width: 100%;
+    background: url(../images/Circle-design.svg);
+}
 .influencer-btn a{
     text-decoration: none;
     font-weight: 700;
@@ -162,6 +166,11 @@ color: #787885;
     font-size: 14px;
 }
 
+.see-more-btn{
+    float: right;
+    margin-top: 10%;
+    margin-left: 1%;
+}
 /* Popular Collection End */
 
 
@@ -279,7 +288,7 @@ i.fab.fa-instagram {
 /* Footer section end */
 
 
-@media only screen and (max-width:688px) {
+@media only screen and (min-width:100px) and (max-width:688px) {
 
     header{
         display: none;
@@ -288,20 +297,7 @@ i.fab.fa-instagram {
         grid-template-columns: repeat(1, 1fr);
         gap: 5%;
     }
-    
 
-    .influencer-right{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../images/Circle-design.svg) no-repeat;
-    background-position: center;
-    }
-
-    .influencer-right img{
-        width: 90%;
-    }
 
     .company-logos{
         grid-template-columns: repeat(4, 1fr);
@@ -317,9 +313,17 @@ i.fab.fa-instagram {
         gap: 1% 0;
     }
 
+    .see-more-btn{
+    margin-top: 53%;
+    }
+
 
     .solutions{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tech-solution {
+        margin-bottom: 10%;
     }
 
     .single-solution{
@@ -330,7 +334,35 @@ i.fab.fa-instagram {
     .h2.centered-text{
         margin: 20px 10px;
     }
-    .solution-section{
-        padding: 60px 0;
+    .heading-text{
+        font-size: 1.6em;
+    }
+    .infulencer-text{
+        font-size: 14px;
+    }
+    .influencer-left{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    /* header{
+        display: none;
+    } */
+    /* .influencer-section{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5%;
+    } */
+
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .see-more-btn{
+        margin-top: 25%;
     }
 }
